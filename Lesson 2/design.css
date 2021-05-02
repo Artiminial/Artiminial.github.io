@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    main {
+      display:grid;
+      grid-template-columns:400px 400px;
+      grid-template-rows:1fr 1fr;
+      background:white;
+    }
+    .comp1{
+        grid-column:1/2;
+        grid-row:1/2;
+    }
+    .comp2{
+        grid-column:2/3;
+        grid-row:1/2;
+    }
+    .comp3{
+        grid-column:1/2;
+        grid-row:2/3;
+    }
+  }
+  @media (max-width: 1000px) {
+    main {
+        display:grid;
+        grid-template-columns:400px;
+        grid-template-rows:1fr 1fr 1fr;
+        background:white;
+      }
+      .comp1{
+          grid-column:1/2;
+          grid-row:1/2;
+      }
+      .comp2{
+          grid-column:1/2;
+          grid-row:2/3;
+      }
+      .comp3{
+          grid-column:1/2;
+          grid-row:3/4;
+      }
+    }
+@media (max-width:4000px) and (min-width:1200px){
+main{ 
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+body{
+    box-shadow: 1px 1px 4px 1px #888;
+    background-color: White;
+    border-radius: 10px;
+}
+.comp1{
+    grid-column:1/2;
+}
+.dimg1{
+    grid-column:1/2;
+    margin-right:35px;
+}
+
+.comp2{
+    grid-column:2/3;
+}
+.mimg1{
+    grid-column:2/3;
+    margin-right:35px;
+}
+
+.comp3{
+    grid-column:3/4;
+}
+.aimg1{
+    grid-column:3/4;
+    margin-right:35px;
+}
+
+p{
+    padding:10px;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    max-height:400px;
+}
+h1, li{
+    font-family: 'Merriweather', serif;
+}
+}
