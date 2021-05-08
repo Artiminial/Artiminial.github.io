@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+ 
+
+header{
+    background-color:#888;
+}
+ul{
+    font-family: 'Goblin One', cursive;
+    font-size:1.5em;
+    list-style-type:none;
+    display:flex;
+    justify-content: space-around;
+}
+.box1{
+    background-color:red;
+    margin: 10px;
+}
+.box2{
+    background-color:yellow;
+    margin: 10px;
+}
+.box3{
+    background-color:orange;
+    margin: 10px;
+}
