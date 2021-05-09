@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+
+main{
+    text-align:center;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color:black;
+    color:white;
+}
+body{
+    margin:0 auto;
+    max-width:1000px;
+}
+img{
+    border-radius: 100px;
+    box-shadow: 1px 1px 4px 1px black;
+}
+.scenario{
+    text-align: left;
+}
+.color3{
+    background-color:#1a79f5
+}
+.color4{
+    background-color:orange;
+}
+
+.font1{
+    font-family: 'Open Sans', sans-serif;
+}
+.font2{
+    font-family: 'Merriweather', serif;
+}
+ul{
+    list-style-type:none;
+    color:white;
+    display: flex;
+    flex:wrap;
+    justify-content:space-between;
+    align-items: center;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.link1{
+    grid-column:1/2;
+}
+.link2{
+    grid-column:2/3;
+    }
+.link3{
+     grid-column:3/4;
+    }
+
+    @media (max-width: 700px) {
+        ul{
+            list-style-type:none;
+            color:white;
+            display: flex;
+            flex:wrap;
+            justify-content:space-between;
+            align-items: center;
+            display:grid;
+            grid-template-columns:1fr;
+        }
+        .link1{
+            grid-column:1/2;
+        }
+        .link2{
+            grid-column:1/2;
+            }
+        .link3{
+             grid-column:1/2;
+            }
+
+    }
