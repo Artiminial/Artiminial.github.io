@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
-
+@media(min-width:601px){
 h1, h2, h3, h4, h5{
     font-family: 'Merriweather', serif;
 }
@@ -28,14 +28,17 @@ main{
     background-color:grey;
     grid-column:3/4;
 }
-ul{
+.hlinks li:first-child{
+    display:none;
+}
+.hlinks{
     background-color:black;
     justify-content:space-around;
     display: flex;
     margin:0px;
     padding: 0px;
 }
-li{
+.link1, .link2, .link3, .link4, .link5, .link6{
     font-size:2em;
 }
 a:link{
@@ -91,4 +94,79 @@ a:visited{
     margin-bottom:15px;
 }
 
+.bottom{
+    background-color:grey;
 
+}
+
+.bottom{
+    display:grid;
+    grid-template-columns: 150px 400px 150px 500px;
+    grid-template-rows:20px 200px 20px;
+}
+.map{
+    grid-column: 2/3;
+    grid-row:2/4;
+}
+.fhead{
+    grid-column:4/5;
+    grid-row:1/2
+}
+.clist{
+    grid-column: 4/5;
+    grid-row:2/3;
+}
+.social1, .social2, .social3{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    margin-top:-50px;
+}
+.social2{
+    margin-left:100px;
+}
+.social3{
+    margin-left:200px;
+}
+.foot{
+    height: 100px;
+}
+}
+@media(max-width: 600px){
+.hlinks{
+    display:block;
+}
+.hlinks li{
+    display:none;
+}
+.responsive li{
+    display:block;
+}
+main{
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.head{
+    grid-row:1/2;
+}
+.heroimg{
+    max-width:100%;
+    grid-row:2/3;
+}
+.weather{
+    grid-row:3/4;
+}
+.fiveday{
+    grid-row:4/5;
+}
+.news{
+    grid-row:5/6;
+}
+.bottom{
+    grid-row:6/7;
+}
+
+
+
+
+}
