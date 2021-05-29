@@ -91,10 +91,10 @@ a:visited {
 
 .weather {
     max-height: 250px;
-    max-width: 250px;
+    max-width: 300px;
     float: left;
     margin-top: -350px;
-    margin-left: 150px;
+    margin-left: 100px;
     position: absolute;
     background-color: white;
 }
@@ -102,7 +102,9 @@ a:visited {
 .fiveDay {
     margin-left: 100px
 }
-
+.nomargin{
+    margin:0px;
+}
 .forecast {
     margin: auto;
     max-width: 1000px;
@@ -112,7 +114,18 @@ a:visited {
     background-color: #d3d3d3;
 }
 
-
+.isflex{
+    display:flex;
+    flex-wrap: nowrap;
+    max-width: 150px;
+    max-height: 20px;
+}
+.output{
+    background-color: white; 
+    border: 2px solid lightgray; 
+    max-width:40px; 
+    max-height: 20px;
+}
 
 .news {
     max-width: 1000px;
@@ -161,7 +174,7 @@ a:visited {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .heroimg {
         max-width: 100%;
         margin: 0px;
