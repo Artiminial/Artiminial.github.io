@@ -1,0 +1,18 @@
+.grid-container{
+    display:grid;
+    grid-template-areas:
+    'image9 image1 image2'
+    'image9 image3 image4'
+    'image5 image5 image4'
+    'image5 image5 image6'
+    'image7 image10 image10'
+    'image8 image10 image10'
+    'image9 image1 image2'
+    'image9 image3 image4'
+    'image5 image5 image4'
+    'image5 image5 image6'
+    'image7 image10 image10'
+    'image8 image10 image10';
+    grid-gap: 10px;
+    padding:0px;
+}
