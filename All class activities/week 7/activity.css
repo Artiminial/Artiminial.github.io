@@ -1,18 +1,64 @@
-.grid-container{
-    display:grid;
+.image1 {
+    grid-area: image1;
+    background-color: #35424c;
+}
+
+.image2 {
+    grid-area: image2;
+    background-color: #35424c;
+}
+
+.image3 {
+    grid-area: image3;
+    background-color: #35424c;
+}
+
+.image4 {
+    grid-area: image4;
+    background-color: #35424c;
+}
+
+.image5 {
+    grid-area: image5;
+    background-color: #35424c;
+}
+
+.image6 {
+    grid-area: image6;
+    background-color: #35424c;
+}
+
+.image7 {
+    grid-area: image7;
+    background-color: #35424c;
+}
+
+.image8 {
+    grid-area: image8;
+    background-color: #35424c;
+}
+
+.image9 {
+    grid-area: image9;
+    background-color: #35424c;
+}
+
+.image10 {
+    grid-area: image10;
+    background-color: #35424c;
+}
+
+
+.grid-container {
+    display: grid;
     grid-template-areas:
-    'image9 image1 image2'
-    'image9 image3 image4'
-    'image5 image5 image4'
-    'image5 image5 image6'
-    'image7 image10 image10'
-    'image8 image10 image10'
-    'image9 image1 image2'
-    'image9 image3 image4'
-    'image5 image5 image4'
-    'image5 image5 image6'
-    'image7 image10 image10'
-    'image8 image10 image10';
+        'image9 image1 image2'
+        'image9 image3 image4'
+        'image5 image5 image4'
+        'image5 image5 image6'
+        'image7 image10 image10'
+        'image8 image10 image10'
+;
     grid-gap: 10px;
-    padding:0px;
+    padding: 0px;
 }
