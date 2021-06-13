@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
 
 
 if (date.getDay() !== 5) {
-    document.getElementById("pancake-banner").className = 'hidden'
+    document.getElementById("pancake-banner").className = 'hidden';
 } else {
     document.getElementById("pancake-banner").className = 'show'
 
