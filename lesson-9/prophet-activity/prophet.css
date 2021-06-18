@@ -1,0 +1,32 @@
+.style{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 600px 600px 600px 600px;
+    grid-gap: 5px;
+    background-color: lightblue;
+}
+div{
+    align-items:center;
+}
+
+img{
+    box-shadow: 10px 5px 5px grey;
+}
+img:hover{
+    box-shadow: 10px 5px 5px black;
+
+}
+
+@media screen and (max-width: 1500px) {
+    .style{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 600px 600px 600px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .style{
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px 600px 600px 600px;
+    }
+}
+

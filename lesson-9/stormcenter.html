@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+     <link href="css/normalize.css" rel="stylesheet">
+     <link rel="stylesheet" href="preston.css">
+     <link rel="stylesheet" href="storm.css">
+
+     <title>Week 4 project</title>
+
+</head>
+<main>
+    <header class="head">
+
+        <img class="logo" src="images/iconfinder_Umbrella_2974391.png">
+        <div class="siteTitle">
+            <h1 class="siteName"><strong>T</strong>HE <strong>W</strong>EATHER <strong>S</strong>ITE</h1>
+            <p class="motto">motto / catch phrase</p>
+        </div>
+
+    </header>
+    <nav>
+
+        <ul class="hlinks">
+            <li class="hamburgerMenue"><a href="">&#9776; Menue</a>></a></li>
+            <li class="link"><span></span><a href="google.com">Home</a></li>
+            <li class="link"><span></span><a href="/Lesson-6/preston-6.html">Preston</a></li>
+            <li class="link"><span></span><a href="google.com">Soda Springs</a></li>
+            <li class="link"><span></span><a href="google.com">Fish Haven</a></li>
+            <li class="link active"><span></span><a href="/Lesson-8/stormcenter.html">Storm Center</a></li>
+            <li class="link"><span></span><a href="/Lesson-7/gallery-site/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <body>
+        <form action="thanks.html" method="get">
+            <label for="fulln">Enter your full name</label><input type = "text" id = "fulln" name = "fname" required pattern = "[A-Za-z ]{5,50}"><br>
+            <label for="email">Enter your email</label><input type = "email" id = "email" name = "maile" pattern = "[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9- ]+)*$/" placeholder = "hect0r@gmail.com"><br>
+            <label for="phone">Enter your telephone number</label><input type = "tel" id = "phone" name = "tele" required pattern = "[0-9-() ]{6,16}"><br>
+            <label for="zip">Enter your zip code</label><input type = "number" id = "zip" name = "zip" pattern = "[0-9- ]{5}"><br>
+            <label for="storm">Enter the storm date</label><input type = "date" id = "storm" name = "storm" pattern = "[0-9/]" placeholder = "mm/dd/YYYY"><br>
+            <label for="type">Enter the storm type</label><input type = "list" id = "type" name = "type" required list = "l1">
+            <datalist id="l1">
+                <option>Flash Flood</option>
+                <option>Hail</option>
+                <option>Hurricane</option>
+                <option>Thunderstorm</option>
+                <option>Tornado</option>
+              </datalist><br>
+
+              <label for="sever">Enter the storms severity</label><input type="range" id="sever" name="severity" required value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value"><output>10</output><br>
+              <label for="region">Enter the storms region</label>
+              <select id="l2">
+                <option value = "select" disabled>Select a region</option>
+                <option value = "Preston">Preston</option>
+                <option value = "FishHaven">Fish Haven</option>
+                <option value = "SodaSprings">Soda Springs</option>
+              </select><br>
+
+              <label for="trouble">Are you currently in danger?</label><br>
+              <input type="radio" id="no" name="low" value="low">
+              <label for="no">No</label><br>
+              <input type="radio" id="yes" name="high" value="high">
+              <label for="high">Yes</label><br>
+              <input type="radio" id="other" name="maybe" value="maybe">
+              <label for="other">Maybe</label><br>
+              
+              <label for="comments">Do you have any additional comments or information?</label><textarea id = "comments" maxlength = "140" rows="1"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+       
+        <div class="bottom">
+            <div>
+          <img class="map" src="images\400x200.jpeg">
+            </div>
+            <div>
+            <p class="fhead">Contact information</p>
+            <ul class="clist">
+                <li><a href="google.com"></a>My current Address</li>
+                <li><a href="google.com"></a>My current Phone number</li>
+                <li><a href="google.com"></a>My current email</li>
+            </ul>
+            <img class="social1" src="images/placeholder.png" alt="placeholder">
+            <img class="social2" src="images/placeholder.png" alt="placeholder">
+            <img class="social3" src="images/placeholder.png" alt="placeholder">
+        </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ['Merriweather', 'Roboto']}});</script>
+    </body>
+    <footer class="foot">
+        <p> The weather site <span id="currentDate"></span></p>
+    </footer>
+    <script src="preston_6.js"></script>
+    <script src = "thanks.js"></script>
+</main>
+
+</html>
