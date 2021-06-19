@@ -2,6 +2,7 @@
     max-width:1200px;
     display: grid;
     grid-template-columns:380px 380px 380px;
+    grid-template-rows: 540px;
     grid-gap:20px;
 }
 .weatherdata img{
@@ -9,4 +10,35 @@
 }
 .weatherdata div{
     background-color:lightblue;
+}
+h1{
+    font-size:3em;
+    line-height: 20px;
+}
+h2{
+    font-size:1.8em
+}
+
+p{
+font-size:1em;
+}
+@media screen and (max-width: 1200px) {
+    .weatherdata{
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
+    }
+.weatherdata img{
+    float:right;
+    max-width:50%;
+}
+}
+@media screen and (max-width: 800px) {
+    .weatherdata{
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
+    }
+    .weatherdata img{
+        float:center;
+        max-width:100%;
+    }
 }

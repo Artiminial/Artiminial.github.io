@@ -25,9 +25,6 @@ fetch(requestURL)
 };
 
 
-
-
-
     const displayData = (data) => {
         const prophets = document.getElementById('prophets');
         console.log(data)

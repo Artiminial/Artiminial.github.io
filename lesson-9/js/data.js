@@ -56,8 +56,8 @@ let data = {
        <h1>${element.name}</h1>
        <h2>${element.motto}</h2>
        <p>Founded in ${element.yearFounded}</p>
-       <p>${element.currentPopulation}</p>
-       <p>${element.averageRainfall}</p>
+       <p>Population:${element.currentPopulation}</p>
+       <p>Average rainfall in inches:${element.averageRainfall}</p>
        <img class="presimg" src="../lesson-9/images/${element.photo}" alt="Photo of ${element.name}">
    </div>`
     });
