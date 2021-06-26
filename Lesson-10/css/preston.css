@@ -96,7 +96,7 @@ a:visited {
     margin-top: -350px;
     margin-left: 100px;
     position: absolute;
-    background-color: white;
+    background-color: lightblue;
 }
 
 .fiveDay {
@@ -108,9 +108,8 @@ a:visited {
 .forecast {
     margin: auto;
     max-width: 1000px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     background-color: #d3d3d3;
 }
 
