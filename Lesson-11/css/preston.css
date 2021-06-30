@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.head {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 100px 150px 1fr;
+    justify-content: space-around;
+}
+
+.logo {
+    grid-column: 2/3;
+    margin-top: 7px;
+    border-radius: 100px;
+    box-shadow: 1px 1px 4px 1px black;
+}
+
+.siteTitle {
+    background-color: grey;
+    grid-column: 3/4;
+}
+
+.hlinks li:first-child {
+    display: none;
+}
+
+.hlinks {
+    background-color: black;
+    justify-content: space-around;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.active {
+    background-color: blue;
+}
+
+.link {
+    font-size: 2em;
+}
+
+a:link {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: blue;
+}
+
+a:visited {
+    color: white;
+}
+
+.town {
+    margin-left: 100px;
+    color: red;
+}
+
+.hero {
+
+    max-width: 1000px;
+    margin: auto;
+}
+
+.heroimg {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.weather {
+    max-height: 250px;
+    max-width: 300px;
+    float: left;
+    margin-top: -350px;
+    margin-left: 100px;
+    position: absolute;
+    background-color: lightblue;
+}
+
+.fiveDay {
+    margin-left: 100px
+}
+.nomargin{
+    margin:0px;
+}
+.forecast {
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    background-color: #d3d3d3;
+}
+.temp{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.isflex{
+    display:flex;
+    flex-wrap: nowrap;
+    max-width: 150px;
+    max-height: 20px;
+}
+.output{
+    background-color: white; 
+    border: 2px solid lightgray; 
+    max-width:40px; 
+    max-height: 20px;
+}
+
+.news {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #d3d3d3;
+}
+
+.artimg {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.bottom {
+    background-color: grey;
+
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social2 {
+    margin-left: 100px;
+}
+
+.social3 {
+    margin-left: 200px;
+}
+
+.foot {
+    height: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hlinks.responsive .link {
+    display: block;
+}
+
+
+@media screen and (max-width: 600px) {
+    .heroimg {
+        max-width: 100%;
+        margin: 0px;
+        position: static;
+    }
+
+    .weather {
+        display: block;
+        position: static;
+        background-color: white;
+        margin: 0px;
+        float: none;
+        max-width: 100%;
+    }
+
+    .hlinks {
+        display: grid;
+        list-style:none;
+        grid-template-columns: auto;
+    }
+
+    .hlinks a {
+        display:block;
+    }
+
+
+
+    .hlinks .link {
+        display: none;
+
+    }
+    .hlinks li:first-child { 
+        display: block;
+    }
+
+
+}
