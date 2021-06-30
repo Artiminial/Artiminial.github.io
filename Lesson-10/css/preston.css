@@ -112,6 +112,16 @@ a:visited {
     grid-template-columns: 200px 200px 200px 200px 200px;
     background-color: #d3d3d3;
 }
+.temp{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 
 .isflex{
     display:flex;
