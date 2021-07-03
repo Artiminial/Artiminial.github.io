@@ -140,6 +140,10 @@ a:visited {
     text-align: center;
     font-weight: bold;
     font-size:2em;
+    box-shadow: 2px 2px 2px 2px #000; 
+}
+#events h3{
+    background-color: yellow;
 }
 
 .news {
