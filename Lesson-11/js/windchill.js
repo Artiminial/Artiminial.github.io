@@ -83,9 +83,7 @@ function displayData(data){
      datacities.innerHTML +=`
      <div class = events>
      <p>${array.events[0]}</p>
-     <br>
      <p>${array.events[1]}</p>
-     <br>
      <p>${array.events[2]}</p>`
   }
   )}
