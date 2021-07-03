@@ -19,23 +19,7 @@
 // }
 
 
-let data = {
-    "towns":[
-      {
-        name: "Preston",
-        photo: "preston.jpg",
-        motto: "Home of Napoleon Dynamite.",
-        yearFounded: 1866,
-        currentPopulation: 5204,
-        averageRainfall: 16.65,
-        events: [
-          "March 29: Work Creek Revival",
-          "July 8-12: Napoleon Dynamite Festival",
-          "November 2-4: Freedom Days"
-        ]
-      }
-    ]
-}
+
 
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=248efaaf10b4ac03fa08a821fe1b4cb4";
 const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=248efaaf10b4ac03fa08a821fe1b4cb4";
@@ -76,3 +60,37 @@ fetchData(weatherUrl).then((data) => {
     document.getElementById('humid').innerHTML = data.main.humidity;
     document.getElementById('speed').innerHTML = data.wind.speed;
 });
+
+let data = {
+    "towns":[
+      {
+        name: "Preston",
+        photo: "preston.jpg",
+        motto: "Home of Napoleon Dynamite.",
+        yearFounded: 1866,
+        currentPopulation: 5204,
+        averageRainfall: 16.65,
+        events: [
+          "March 29: Work Creek Revival",
+          "July 8-12: Napoleon Dynamite Festival",
+          "November 2-4: Freedom Days"
+        ]
+      }
+    ]
+}
+console.log(data.towns);
+displayData(data)
+function displayData(data){
+  const datacities = document.getElementById('events');
+  data.towns.forEach((array) =>{
+     datacities.innerHTML +=`
+     <div class = events>
+     <p>${array.events[0]}</p>
+     <br>
+     <p>${array.events[1]}</p>
+     <br>
+     <p>${array.events[2]}</p>
+     <br>
+     <p>${array.events[3]}</p>`
+  }
+  )}

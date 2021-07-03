@@ -55,17 +55,6 @@ fetchData(weatherUrl).then((data) => {
     document.getElementById('speed').innerHTML = data.wind.speed;
 });
 
-console.log(data.towns);
-displayData(data)
-function displayData(data){
-  const datacities = document.getElementById('events');
-  data.towns.forEach((element) =>{
-     datacities.innerHTML +=`
-     <div class = events>
-     <p>${array.events}</p>`
-  }
-  )}
-
 let data = {
     "towns":[
       {
@@ -84,3 +73,19 @@ let data = {
       }
     ]
 }
+console.log(data.towns);
+displayData(data)
+function displayData(data){
+  const datacities = document.getElementById('events');
+  data.towns.forEach((array) =>{
+     datacities.innerHTML +=`
+     <div class = events>
+     <p>${array.events[0]}</p>
+     <br>
+     <p>${array.events[1]}</p>
+     <br>
+     <p>${array.events[2]}</p>
+     <br>
+     <p>${array.events[3]}</p>`
+  }
+  )}
