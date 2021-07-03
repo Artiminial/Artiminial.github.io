@@ -18,6 +18,24 @@
 //     document.getElementById("output").innerHTML = result.toFixed(2) + " °F"
 // }
 
+
+let data = {
+    "towns":[
+      {
+        name: "Soda Springs",
+        photo: "sodasprings.jpg",
+        motto: "Historic Oregon Trail Oasis. The Soda is on Us.",
+        yearFounded: 1858,
+        currentPopulation: 2985,
+        averageRainfall: 15.75,
+        events: [
+          "February 29: Geyser Song Day",
+          "May 1-6: Days of May Celebration",
+          "October 15-16: Octoberfest"
+        ]
+      }
+    ]
+}
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=248efaaf10b4ac03fa08a821fe1b4cb4";
 const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=248efaaf10b4ac03fa08a821fe1b4cb4";
 

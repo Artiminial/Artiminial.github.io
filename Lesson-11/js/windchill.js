@@ -18,6 +18,25 @@
 //     document.getElementById("output").innerHTML = result.toFixed(2) + " °F"
 // }
 
+
+let data = {
+    "towns":[
+      {
+        name: "Preston",
+        photo: "preston.jpg",
+        motto: "Home of Napoleon Dynamite.",
+        yearFounded: 1866,
+        currentPopulation: 5204,
+        averageRainfall: 16.65,
+        events: [
+          "March 29: Work Creek Revival",
+          "July 8-12: Napoleon Dynamite Festival",
+          "November 2-4: Freedom Days"
+        ]
+      }
+    ]
+}
+
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=248efaaf10b4ac03fa08a821fe1b4cb4";
 const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=248efaaf10b4ac03fa08a821fe1b4cb4";
 

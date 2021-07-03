@@ -49,11 +49,38 @@ fetchData(forecastUrl).then((data) => {
 fetchData(weatherUrl).then((data) => {
     const jsObject = data;
     console.log(jsObject)
-    //Get element by ID
-    // insert html with .innerhtml = 
-    // display data using something similar to ${data. ..............
     document.getElementById('temp').innerHTML = data.main.temp;
     document.getElementById('high').innerHTML = data.main.temp_max;
     document.getElementById('humid').innerHTML = data.main.humidity;
     document.getElementById('speed').innerHTML = data.wind.speed;
 });
+
+console.log(data.towns);
+displayData(data)
+function displayData(data){
+  const datacities = document.getElementById('events');
+  data.towns.forEach((element) =>{
+     datacities.innerHTML +=`
+     <div class = events>
+     <p>${array.events}</p>`
+  }
+  )}
+
+let data = {
+    "towns":[
+      {
+        name: "Fish Haven",
+        photo: "fishhaven.jpg",
+        motto: "This is Fish Heaven.",
+        yearFounded: 1864,
+        currentPopulation: 501,
+        averageRainfall: 14.20,
+        events: [
+          "April 1: How Big Was That Fish Day",
+          "May 15-30: Rush the Creek Days",
+          "July 24: Bear Lake Blunder Run",
+          "December 12: Light the Tree"
+        ]
+      }
+    ]
+}
