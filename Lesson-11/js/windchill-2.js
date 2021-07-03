@@ -51,14 +51,12 @@ fetchData(forecastUrl).then((data) => {
 fetchData(weatherUrl).then((data) => {
     const jsObject = data;
     console.log(jsObject)
-    //Get element by ID
-    // insert html with .innerhtml = 
-    // display data using something similar to ${data. ..............
     document.getElementById('temp').innerHTML = data.main.temp;
     document.getElementById('high').innerHTML = data.main.temp_max;
     document.getElementById('humid').innerHTML = data.main.humidity;
     document.getElementById('speed').innerHTML = data.wind.speed;
 });
+
 let data = {
     "towns":[
       {
