@@ -89,8 +89,6 @@ function displayData(data){
      <br>
      <p>${array.events[1]}</p>
      <br>
-     <p>${array.events[2]}</p>
-     <br>
-     <p>${array.events[3]}</p>`
+     <p>${array.events[2]}</p>`
   }
   )}
