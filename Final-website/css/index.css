@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Shippori+Mincho:wght@500&display=swap');
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+#content {
+    max-width: 2000px;
+    background-color: #20A4F3;
+    margin: 0 auto;
+}
+
+header {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 110px auto;
+}
+
+.Intro {
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+
+body {
+    background-color: #F6F7F8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    border-top: 5px double;
+    border-bottom: 5px double;
+}
+
+.logo-box {
+    background-color: white;
+    border-radius: 50px 50px 50px 50px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+nav a {
+    font-size: 1.1em;
+    color: black;
+}
+
+nav a:hover {
+    color: White;
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    margin: 0;
+}
+
+.banner-box {
+    text-align: center;
+}
+
+.banner-box img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-headline-1 {
+    background-color: #2EC4B6;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 3em;
+
+}
+
+.home-paragraph-1 {
+    font-size: 1em;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 80% 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px;
+    background-color: #13C4A3;
+}
+
+.legal-info {
+    font-size: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.phone {
+    font-size: 20px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.add {
+    font-size: 20px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.social {
+    text-align: left;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.social2 {
+    text-align: center;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.social3 {
+    text-align: right;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+@media screen and (max-width: 920px) and (min-width: 550px) {}
+
+@media screen and (max-width: 550px) {
+
+    .home-grid,
+    nav ul,
+    .banner-box {
+        display: block;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
