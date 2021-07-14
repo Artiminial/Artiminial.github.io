@@ -3,7 +3,7 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 
 #content {
-    max-width: 2000px;
+    max-width: 1200px;
     background-color: #20A4F3;
     margin: 0 auto;
 }
