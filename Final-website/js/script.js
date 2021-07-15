@@ -17,29 +17,30 @@ function getRandomInt(min, max) {
 const getData = (urlRequest) => {
     let encodedURI = encodeURI(url + urlRequest);
     fetchData(encodedURI)
-    .then((data => {
-        displayData(data);
-    }))
-    .catch((error) => {
-        console.log(error)
-    })
+        .then((data => {
+            displayData(data);
+        }))
+        .catch((error) => {
+            console.log(error)
+        })
 };
 
-async function fetchData(url){
-    const response = await fetch(url).then((response) =>{
-        return response.json();
-    })
-    
-    .catch((error) => console.log(error));
+async function fetchData(url) {
+    const response = await fetch(url).then((response) => {
+            return response.json();
+        })
+
+        .catch((error) => console.log(error));
     return response;
 }
 
-function urlResult(){
-    let rand = getRandomInt(100,000, 120,000);
+function urlResult() {
+    let rand = getRandomInt(100, 000, 120, 000);
     getData(`https://api.spoonacular.com/recipes/${rand}/information?apiKey=7a3793a6d2a74c46a5ff81a2da0cffd9&includeNutrition=true.`);
-    alert("IS connected?"); 
+    alert("IS connected?");
 }
-function displayData(data){
+
+function displayData(data) {
     console.log(data);
 }
 
