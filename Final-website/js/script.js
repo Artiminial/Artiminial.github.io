@@ -1,4 +1,5 @@
-let url = `https://api.spoonacular.com/recipes/99999/information?apiKey=7a3793a6d2a74c46a5ff81a2da0cffd9&includeNutrition=true.`
+let rand = getRandomInt(100000, 120000);
+let url = `https://api.spoonacular.com/recipes/` + rand + `/information?apiKey=7a3793a6d2a74c46a5ff81a2da0cffd9&includeNutrition=true.`
 
 /**
  * Returns a random integer between min (inclusive) and max (inclusive).
@@ -35,8 +36,7 @@ async function fetchData(url) {
 }
 
 function urlResult() {
-    let rand = getRandomInt(100000, 120000);
-    getData(`https://api.spoonacular.com/recipes/${rand}/information?apiKey=7a3793a6d2a74c46a5ff81a2da0cffd9&includeNutrition=true.`);
+    getData(`https://api.spoonacular.com/recipes/99000/information?apiKey=7a3793a6d2a74c46a5ff81a2da0cffd9&includeNutrition=true.`);
 }
 
 
