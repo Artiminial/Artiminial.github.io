@@ -77,6 +77,16 @@ nav ul {
 
 }
 
+.home-headline-2 {
+    background-color: #2EC4B6;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.36em;
+
+}
+
 .home-paragraph-1 {
     font-size: 1em;
     line-height: 20px;

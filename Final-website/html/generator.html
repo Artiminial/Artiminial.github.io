@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/index.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <button type="button" id = "randomButton">Get a random Recipe</button>
-    <div id = "recipe">
-    </div>
+    <div id="content">
+        <header>
+            <div class="logo-box"><img
+                    src="https://cdn.glitch.com/2419f33a-3d05-487b-941d-25e5ff67ffd4%2Fpngtree-cooking-logo-design-inspiration-image_202856.jpg?v=1615583890357"
+                    alt="Site logo"></div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="easy.html">Easy</a></li>
+                    <li><a href="medium.html">Medium</a></li>
+                    <li><a href="difficult.html">Difficult</a></li>
+                    <li><a href="generator.html">Random recepie generator</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <button type="button" id="randomButton">Get a random Recipe</button>
+            <div id="recipe">
+            </div><br><br><br>
+            <form action="thanks.html" method="get">
+                <h2 class="home-headline-2">If you want access to even more random and fun recipies, sign up and expant
+                    to over 100,000 new recipe's to make!</h2>
+                <label for="fulln">Enter your full name</label><input type="text" id="fulln" name="fname" required
+                    pattern="[A-Za-z ]{5,50}"><br>
+                <label for="email">Enter your email</label><input type="email" id="email" name="maile"
+                    pattern="[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9- ]+)*$/"
+                    placeholder="hect0r@gmail.com"><br>
+                <label for="phone">Enter your telephone number</label><input type="tel" id="phone" name="tele" required
+                    pattern="[0-9-() ]{6,16}"><br>
+                <label for="zip">Enter your zip code</label><input type="number" id="zip" name="zip"
+                    pattern="[0-9- ]{5}"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
 </body>
-<script src = "../js/script.js"></script>
+<script src="../js/script.js"></script>
+
 </html>
