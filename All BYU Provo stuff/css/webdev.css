@@ -1,0 +1,47 @@
+/* in order. I am modifying the body of the webpage, changing the text color, background
+and other cemantics. I then modify the links within my page, then I edit their
+color, font weight, and font size depending on their status*/
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 15px;
+    color: maroon;
+    background-color: rgb(233, 233, 136);
+    }
+    a{color: maroon;
+    text-decoration: none;}
+    a:hover{
+        text-decoration: underline;
+        /* font-weight: bold;
+        font-size: 18px; */
+    }
+    a:visited{
+        color: teal;
+    }
+    .resumelistheading{
+        font-weight: bold;
+        font-style: normal;
+    }
+    li{
+        font-size: 14px;
+        font-style: italic;
+        font-weight: normal;
+    }
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    .homebg{background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    /*thiese are custom css lines that assign unicersal class names to an action
+    or stying that i want to implement*/
+    .underline{text-decoration: underline;  }
+    .bold{font-weight: bold;}
+    .justify{text-align: justify;}
+    .box1{
+        border-width: 1px;
+        border-style: solid;
+    }
